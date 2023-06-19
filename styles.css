@@ -1,0 +1,115 @@
+/* 1.Global Styles */
+
+:root {
+    --color-background-grey: rgb(247,248,249);
+    /*For color boxes is Colors section*/
+    --colors-sunshine: #FBE446;
+    --colors-golden-rays: #FCB33F;
+    --colors-amber: #F68D32;
+    --colors-stone: #727477;
+    --colors-shade: #282829;
+  }
+  
+  body {
+    font-size: 16px;
+    color: var(--colors-shade);
+  }
+  
+  /* 2. Text */
+  
+  .primary-titles {
+    font-size: 20px;
+    font-weight: 200;
+    width: fit-content;
+  }
+  
+  .primary-titles::after {
+    background: var(--colors-golden-rays);
+    width: 100%;
+    height: 5px;
+    content: '';
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .secondary-titles {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .css-color {
+    color: var(--colors-stone);
+  }
+  
+  
+  /* 3. Pages */
+  
+  .colors-container .container {
+    background: var(--color-background-grey);
+  }
+  
+  .row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .images-grid-container {
+    row-gap: 30px;
+  }
+  
+  .footer-container .container{
+    background: var(--colors-stone);
+    height: 15px;
+  }
+  
+  /* 4. Cards */
+  
+  .card {
+    display: flex;
+    background-color: unset;
+    border: unset;
+  }
+  
+  .card p {
+    padding: 2px;
+    margin: 0;
+  }
+  
+  .color-box {
+    width: 125px;
+    height: 125px;
+  }
+  
+  .color-box.sunshine {
+    background: var(--colors-sunshine);
+  }
+  
+  .color-box.golden-rays {
+    background: var(--colors-golden-rays);
+  }
+  
+  .color-box.amber {
+    background: var(--colors-amber);
+  }
+  
+  .color-box.stone {
+    background: var(--colors-stone);
+  }
+  
+  .color-box.shade {
+    background: var(--colors-shade);
+  }
+  
+  /* 5. Images */
+  
+  .temp-image {
+    width: 100%;
+    height: 100%;
+    background: var(--colors-stone);
+  }
+  
+  .logo-reverse {
+    background: #000;
+  }
